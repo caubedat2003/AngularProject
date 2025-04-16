@@ -14,7 +14,7 @@ export class LoginComponent {
 
   constructor(private fb: FormBuilder, private authService: AuthService) {
     this.loginForm = this.fb.group({
-      email: ['', [Validators.required, Validators.email]],
+      username: ['', Validators.required],
       password: ['', Validators.required]
     });
   }
@@ -24,7 +24,8 @@ export class LoginComponent {
       this.authService.login(this.loginForm.value).subscribe({
         next: (res) => {
           console.log('Login successful', res);
-          // Store token or redirect user here
+          localStorage.setItem('token', res.token);
+          localStorage.setItem('username', res.username);
         },
         error: (err) => {
           console.error('Login failed', err);

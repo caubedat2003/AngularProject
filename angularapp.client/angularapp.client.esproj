@@ -9,6 +9,5 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="src\app\features\auth\" />
-    <Folder Include="src\app\shared\" />
   </ItemGroup>
 </Project>
