@@ -9,11 +9,12 @@ import { NavbarComponent } from './shared/layout/navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
+    
   ],
   imports: [
     BrowserModule, HttpClientModule,
     AppRoutingModule,
+    NavbarComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
