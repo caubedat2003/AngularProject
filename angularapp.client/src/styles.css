@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+﻿html, body {
+  font-family: 'Baloo Bhaijaan 2', Helvetica, Arial, sans-serif;
+}
+.vertical-middle-align {
+  vertical-align: middle;
+}
